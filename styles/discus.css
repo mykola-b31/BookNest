@@ -1,0 +1,55 @@
+main {
+	background-color: #cdc7be;
+	padding: 24px 24px 40px;
+}
+
+.themes_box {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.discus_theme {
+	background-color: #1e405c;
+	color: #EEEEEE;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 8px;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	transition: transform 0.5s ease, box-shadow 0.4s ease;
+}
+
+.discus_theme:hover {
+	transform: translateX(16px);
+	box-shadow: -10px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme_title {
+	margin: 0px 0px 8px;
+	font-size: 18px;
+}
+
+.theme_author {
+	font-size: 12px;
+	margin: 0px;
+}
+
+.theme_author_link, .theme_title_link, .join_discus {
+	color: #EEEEEE;
+	text-decoration: none;
+}
+
+.join_discus {
+	font-size: 16px;
+}
+
+.theme_author_link:hover, .theme_title_link:hover, .join_discus:hover {
+	color: #00ADB5;
+	text-decoration: underline;
+}
+
+.answers_count {
+	font-weight: 300;
+}

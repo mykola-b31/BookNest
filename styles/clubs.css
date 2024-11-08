@@ -1,0 +1,101 @@
+main {
+	background-color: #cdc7be;
+	padding: 24px 24px 40px;
+}
+
+.main_content {
+	display: flex;
+	justify-content: center;
+}
+
+.clubs_box {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+	max-width: 1600px;
+}
+
+.club {
+	background-color: #1e405c;
+	color: #EEEEEE;
+	font-size: 16px;
+	border-radius: 8px;
+	padding: 8px;
+	width: calc(25% - 16px);
+	height: auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.club_banner {
+    width: 100%;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+
+.about_club {
+	border-top: 2px solid #EEEEEE;
+	border-bottom: 2px solid #EEEEEE;
+	padding: 4px;
+	margin: 8px 0;
+}
+
+.join_button {
+    cursor: pointer;
+	position: relative;
+	width: calc(100% - 16px);
+	margin: 5px;
+	border-radius: 4px;
+	text-align: center;
+	background-color: inherit;
+	border: 2px solid #00ADB5;
+	transition-duration: 0.4s;
+	overflow: hidden;
+}
+
+.join_button:hover {
+	background-color: #00ADB5;
+}
+
+.join_button:after {
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+
+.join_button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s;
+}
+
+.button_text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #EEEEEE;
+}
+
+@media screen and (max-width: 960px) {
+	.club {
+		width: calc(50% - 24px);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.club {
+		width: 100%;
+	}
+}

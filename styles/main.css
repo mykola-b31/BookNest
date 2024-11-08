@@ -1,0 +1,405 @@
+.demo {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+/*Банер*/
+
+.banner {
+	background-image: url('https://images5.alphacoders.com/133/thumb-1920-1338186.png');
+	width: 100%;
+	height: 470px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.banner_text {
+	position: absolute;
+	margin: 0;
+	color: #EEEEEE;
+}
+
+#main_caption {
+	top: 250px;
+	left: 120px;
+	font-size: 70px;
+}
+
+#caption {
+	top: 350px;
+	left: 120px;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+/*Вітальний блок*/
+
+.welcome_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #87a7b3;
+}
+
+.welcome_article {
+	width: 500px;
+	order: 2;
+}
+
+.welcome_img {
+	height: 375px;
+	order: 1;
+}
+
+/*Блок "Буккросинг"*/
+
+.exchange_description {
+	width: 500px;
+}
+
+.exchange_examples {
+	margin: 32px 0px;
+	background-color: #87a7b3;
+	padding: 16px;
+	border-radius: 10px;
+}
+
+.books_box {
+	display: flex;
+	gap: 16px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.book_card {
+	width: 154px;
+	background-color: #1e405c;
+	color: #EEEEEE;
+	border-radius: 5px;
+	padding: 0 8px;
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book_card:hover{
+	transform: translateY(-8px);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#more_exchange_link {
+	text-decoration: none;
+	align: center;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#more_exchange_link:hover {
+	transform: translateY(-3px);
+	filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+.title_cover {
+	margin-bottom: 2px;
+	width: auto;
+	height: 215px;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.cover_img {
+	height: 215px;
+	width: auto;
+	object-fit: contain;
+	object-position: center top;
+}
+
+.title_caption {
+	width: 80%;
+}
+
+.title_name {
+	margin-bottom: 2px;
+	font-size: 16px;
+	font-weight: 500;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.title_author {
+	font-size: 12px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.book_container {
+	display: inline-flex;
+	align-items: flex-start;
+	column-gap: 8px;
+}
+
+/*Блок "Обговорення"*/
+
+.discus_description {
+	width: 500px;
+	order: 2;
+}
+
+.discus_examples {
+	margin: 32px 0;
+}
+
+.themes_box {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.discus_theme {
+	background-color: #1e405c;
+	color: #EEEEEE;
+	font-size: 13px;
+	border-radius: 5px;
+	padding: 8px;
+	width: 420px;
+	heigth: auto;
+	box-sizing: border-box;
+	transition: transform 0.5s ease, box-shadow 0.4s ease;
+}
+
+.discus_theme:hover {
+	transform: translateX(16px);
+	box-shadow: -10px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme_title {
+	margin: 0px 0px 8px;
+	font-size: 14px;
+}
+
+.theme_author {
+	font-size: 11px;
+	margin: 0px;
+}
+
+.theme_author_link, .theme_title_link {
+	color: #EEEEEE;
+	text-decoration: none;
+}
+
+.theme_author_link:hover, .theme_title_link:hover {
+	color: #00ADB5;
+	text-decoration: underline;
+}
+
+.answers_count {
+	font-weight: 300;
+}
+
+#more_discus_link {
+	text-decoration: none;
+	align: center;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#more_discus_link:hover {
+	transform: translateX(8px);
+	filter: drop-shadow(-3px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+/*Блок "Книжкові клуби"*/
+
+.clubs_description {
+	width: 500px;
+}
+
+.clubs_examples {
+	margin: 32px 0px;
+}
+
+.clubs_box {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	gap: 16px;
+}
+
+.club {
+	background-color: #1e405c;
+	color: #EEEEEE;
+	font-size: 13px;
+	border-radius: 8px;
+	padding: 8px;
+	width: 320px;
+	height: auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.club_banner {
+    width: 100%;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+
+.about_club {
+	border-top: 2px solid #EEEEEE;
+	border-bottom: 2px solid #EEEEEE;
+	padding: 4px;
+	margin: 8px 0;
+}
+
+#more_clubs_link {
+	text-decoration: none;
+	align: center;
+	margin: auto 0;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#more_clubs_link:hover {
+	transform: translateY(-3px);
+	filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+@media screen and (max-width: 960px) {
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+	
+	#header_container {
+		flex-direction: row;
+	}
+
+    .menu_list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .welcome_container, .demo {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .welcome_img, .exchange_examples, .clubs_examples, .discus_examples {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .book_container, .club, .discus_theme {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+	
+	.discus_description {
+		order: -1;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    #login {
+        text-align: center;
+    }
+	
+	.banner {
+		height: 250px;
+	}
+
+    .banner_text {
+        font-size: 24px;
+    }
+	
+	#main_caption {
+		top: 120px;
+		left: 32px;
+		font-size: 32px;
+	}
+
+	#caption {
+		top: 150px;
+		left: 32px;
+		font-size: 21px;
+		font-weight: 500;
+	}
+
+    .welcome_article, .exchange_description, .discus_description, .clubs_description {
+        padding: 10px;
+        text-align: center;
+		width: 80%;
+    }
+
+    .welcome_img, .club, .discus_theme {
+        width: 100%;
+    }
+
+    .demo {
+        padding: 10px;
+    }
+
+    .clubs_box, .themes_box {
+        display: block;
+    }
+	
+	.books_box {
+		flex-direction: column;
+	}
+	
+	.book_container {
+		width: 70%;
+	}
+	
+	.cover_img {
+		height: auto;
+		width: 100%;
+	}
+	
+	.title_cover {
+		width: 100%;
+		height: auto;
+	}
+
+    .book_card, .club, .discus_theme {
+        margin: 0 auto 20px auto;
+        width: 100%;
+    }
+	
+	#more_discus_link, #more_clubs_link, #more_exchange_link {
+		display: block;
+		margin: 0 auto 20px auto;
+		padding: 8px;
+		box-sizing: border-box;
+		width: 100%;
+		background-color: #00ADB5;
+		border-radius: 8px;
+	}
+
+    #footer_main {
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+    }
+
+    #footer_info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
