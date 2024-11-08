@@ -2,25 +2,25 @@
 <html lang="uk">
 	<head>
 		<title>BookNest | Знайди, читай, обмінюйся</title>
-		<link rel="stylesheet" href="../styles/style.css">
-		<link rel="stylesheet" href="../styles/exchange.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/discus.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header>
 			<div class="container" id="header_container">
-				<img src="../img/bnlogo.png" alt="logo" width="50" height="50">
+				<img src="img/bnlogo.png" alt="logo" width="50" height="50">
 				<nav class="menu">
 					<ul class="menu_list">
 						<li class="menu_item">
 							<a href="index.html" class="menu_link">Головна</a>
 						</li>
 						<li class="menu_item">
-							<a href="exchange.html" class="curr_page">Обмін</a>
+							<a href="exchange.html" class="menu_link">Обмін</a>
 						</li>
 						<li class="menu_item">
-							<a href="discus.html" class="menu_link">Обговорення</a>
+							<a href="discus.html" class="curr_page">Обговорення</a>
 						</li>
 						<li class="menu_item">
 							<a href="clubs.html" class="menu_link">Книжкові клуби</a>
@@ -52,41 +52,38 @@
 			</div>
 		</header>
 		<main>
-		<div class="books_box">
-			<div class="book_card" id="imaginary_friend" tabindex=0>
-				<img class="cover_img" src="https://static.yakaboo.ua/media/catalog/product/i/m/img_91751.jpg" alt="Уявний друг">
-				<h3 class="title_name">Уявний друг</h3>
-				<h5 class="title_author">Стівен Чбоскі</h5>
-				<p class="title_description">У гарному стані, але без супер обкладинки</p>
-				<button class="_button">Запропонувати обмін</button>
+			<h3>Нові теми обговорень:</h3>
+			<div class="themes_box">
+				<div class="discus_theme">
+					<h4 class="theme_title">
+						<a href="#" class="theme_title_link">"Гра престолів": книги vs серіал</a>
+					</h4>
+					<p class="theme_author">
+						<img src="img/person.svg" style="vertical-align: middle;" alt="pers">
+						<a href="#" class="theme_author_link">madmax82</a>
+					</p>
+					<p class="theme_text">Чи дійсно фінал серіалу відповідає духу книг? Як думаєте, чи закінчить Мартін свою епопею по-іншому?</p>
+					<p class="answers_count">Відповідей: 23</p>
+					<a href="#" class="join_discus">Приєднатися до обговорення >>></a>
+				</div>
+				<div class="discus_theme">
+					<h4 class="theme_title">
+						<a href="#" class="theme_title_link">"Гаррі Поттер" і покоління чарівників: Чи варто перечитувати у дорослому віці?</a>
+					</h4>
+					<p class="theme_author">
+						<img src="img/person.svg" style="vertical-align: middle;" alt="pers">
+						<a href="#" class="theme_author_link">_Nep_T12</a>
+					</p>
+					<p class="theme_text">Перечитую "Гаррі Поттера" і дивуюся, наскільки по-різному сприймаю деякі моменти тепер, коли доросліша. Що змінилося для вас при повторному прочитанні серії? Чи вважаєте ви, що ці книги є класикою для всіх вікових категорій?</p>
+					<p class="answers_count">Відповідей: 11</p>
+					<a href="#" class="join_discus">Приєднатися до обговорення >>></a>
+				</div>
 			</div>
-			<div class="book_card" id="no_longer_human">
-				<img class="cover_img" src="https://e-c.storage.googleapis.com/res/46ca7190-8325-4e00-8a77-b6e38c16a19a/original" title="Бракована людина" alt="Бракована людина">
-				<h3 class="title_name">Бракована людина</h3>
-				<h5 class="title_author">Дадзай Осаму</h5>
-				<p class="title_description">У відмінному стані, читана лише один раз</p>
-				<button class="_button">Запропонувати обмін</button>
-			</div>
-			<div class="book_card" id="maze_runner">
-				<img class="cover_img" src="https://kmbooks.com.ua/img/pics/670618_1_original.jpg" title="Той, що біжить лабіринтом" alt="Бігун у лабіринті">
-				<h3 class="title_name">Той, що біжить лабіринтом. Книга 1</h3>
-				<h5 class="title_author">Джеймс Дешнер</h5>
-				<p class="title_description">Має дрібні подряпини, заломлені сторінки</p>
-				<button class="_button">Запропонувати обмін</button>
-			</div>
-			<div class="book_card" id="cthulhu" tabindex=0>
-				<img class="cover_img" src="https://ireland.apollo.olxcdn.com/v1/files/ri39k0541rks2-UA/image;s=1000x700" alt="Поклик Ктулху">
-				<h3 class="title_name">Поклик Ктулху</h3>
-				<h5 class="title_author">Г. Ф. Лавкрафт</h5>
-				<p class="title_description">Книга нова, не читана, купували на подарунок</p>
-				<button class="_button">Запропонувати обмін</button>
-			</div>
-		</div>
 		</main>
 		<footer>
 			<section id="footer_main">
 				<div id="footer_logo">
-					<img src="../img/bnlogo.png" alt="logo" width="100">
+					<img src="img/bnlogo.png" alt="logo" width="100">
 					<h1 style="margin: 0;">Book Nest</h1>
 					<span>Знайди, читай, обмінюйся</span>
 				</div>
@@ -143,16 +140,16 @@
 			<section>
 				<div id="social">
 					<a href="#">
-						<img src="../img/facebook.svg" width="50">
+						<img src="img/facebook.svg" width="50">
 					</a>
 					<a href="#">
-						<img src="../img/instagram.svg" width="50">
+						<img src="img/instagram.svg" width="50">
 					</a>
 					<a href="#">
-						<img src="../img/twitter.svg" width="50">
+						<img src="img/twitter.svg" width="50">
 					</a>
 					<a href="#">
-						<img src="../img/telegram.svg" width="50">
+						<img src="img/telegram.svg" width="50">
 					</a>
 				</div>
 			</section>
