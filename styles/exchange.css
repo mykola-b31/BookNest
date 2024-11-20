@@ -3,11 +3,17 @@ main {
 	padding: 24px 24px 40px;
 }
 
+.main_content {
+	display: flex;
+	justify-content: center;
+}
+
 .books_box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	gap: 16px;
+	max-width: 1600px;
 }
 
 .book_card {

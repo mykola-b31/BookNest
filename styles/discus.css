@@ -3,6 +3,11 @@ main {
 	padding: 24px 24px 40px;
 }
 
+.main_content {
+	display: flex;
+	justify-content: center;
+}
+
 .themes_box {
 	display: flex;
 	flex-direction: column;

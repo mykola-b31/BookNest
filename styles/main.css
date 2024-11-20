@@ -61,7 +61,7 @@
 }
 
 .exchange_examples {
-	margin: 32px 0px;
+	margin: 32px 0;
 	background-color: #87a7b3;
 	padding: 16px;
 	border-radius: 10px;
@@ -91,7 +91,6 @@
 
 #more_exchange_link {
 	text-decoration: none;
-	align: center;
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -101,7 +100,6 @@
 }
 
 .title_cover {
-	margin-bottom: 2px;
 	width: auto;
 	height: 215px;
 	display: flex;
@@ -167,7 +165,7 @@
 	border-radius: 5px;
 	padding: 8px;
 	width: 420px;
-	heigth: auto;
+	height: auto;
 	box-sizing: border-box;
 	transition: transform 0.5s ease, box-shadow 0.4s ease;
 }
@@ -178,13 +176,13 @@
 }
 
 .theme_title {
-	margin: 0px 0px 8px;
+	margin: 0 0 8px;
 	font-size: 14px;
 }
 
 .theme_author {
 	font-size: 11px;
-	margin: 0px;
+	margin: 0;
 }
 
 .theme_author_link, .theme_title_link {
@@ -203,7 +201,6 @@
 
 #more_discus_link {
 	text-decoration: none;
-	align: center;
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -219,7 +216,7 @@
 }
 
 .clubs_examples {
-	margin: 32px 0px;
+	margin: 32px 0;
 }
 
 .clubs_box {
@@ -258,7 +255,6 @@
 
 #more_clubs_link {
 	text-decoration: none;
-	align: center;
 	margin: auto 0;
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -389,6 +385,16 @@
 		width: 100%;
 		background-color: #00ADB5;
 		border-radius: 8px;
+		text-align: center;
+	}
+
+	.books_box div:nth-child(3) {
+		margin-bottom: 0;
+	}
+
+	#more_exchange_link, #more_clubs_link {
+		width: 100px;
+		border-radius: 20%;
 	}
 
     #footer_main {
